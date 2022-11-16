@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"
+    >
 </head>
 <body>
     <header class="container border text-center rounded-pill text-warning bg-dark"> 
@@ -13,27 +15,28 @@
     </header>
     <div class="container-fluid row">
         <aside class='container'>
-            <h2 id="citySearchTitle">Search for a city:</h2>
+            <h2 id="citySearchTitle">Search for a city</h2>
             <div class="input-group">
                 <input type="text" class="form-control-md" placeholder="Search for a city" aria-label="Recipient's username" id="citySearchInput">
-                <button class="btn btn-info" type="button" id="citySearchButton"> Search</button>
+                <button class="btn btn-info" type="button" id="citySearchButton">Search</button>
             </div>
         </aside>
-        <div class="list-group" id="previousSearch"></div>
-        <section>
+        
             <div class="col-lg-8 pb-lg-4 row ">
                 <div class="card" style="width: 20rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Today's Forecast</h5>
-                      <p id="temp">tempature</p>
-                      <p id="wind">wind</p>
-                      <p id="humidity">humidity</p>
+                        <h5 class="card-title">Today's Forecast</h5>
+                        <p id="currentCity">Current City:</p>
+                        <p id="temp">tempature:</p>
+                        <p id="wind">wind:</p>
+                        <p id="humidity">humidity:</p>
                     </div>
-                  </div>
+                </div>
             </div>
-        </section>
-        <div>
-
+        
+        <div class="list-group" id="previousSearch"></div>
+        <div class="container text-center border-dark row align-items-start col-9" id="forecast">
+            
         </div>
     </div>
  <script src="/script.js"></script>   
